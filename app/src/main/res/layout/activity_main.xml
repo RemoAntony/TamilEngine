@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_maingradient"
+    tools:context=".MainActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarmain"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/ColorPrimary11"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        />
+
+    <Button
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textColor="#ffffff"
+        android:onClick="tts"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:text="Text To Speech Engine"
+        android:background="@drawable/btn_gray"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <Button
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_gray"
+        android:text="Speech To Text Engine"
+        android:onClick="stt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <TextView
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="70dp"
+        android:text="Project By,"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="R. Remo Antony - 2013506096"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:textColor="#ffffff"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:text="V. Subhash Ignatius - 2013506106"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
