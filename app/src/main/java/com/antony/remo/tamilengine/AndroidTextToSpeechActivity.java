@@ -13,7 +13,6 @@ import java.util.Locale;
 
 public class AndroidTextToSpeechActivity extends Activity implements
         TextToSpeech.OnInitListener {
-    /** Called when the activity is first created. */
 
     private TextToSpeech tts;
     private Button btnSpeak;
@@ -30,7 +29,6 @@ public class AndroidTextToSpeechActivity extends Activity implements
 
         txtText = (EditText) findViewById(R.id.txtText);
 
-        // button on click event
         btnSpeak.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -43,7 +41,6 @@ public class AndroidTextToSpeechActivity extends Activity implements
 
     @Override
     public void onDestroy() {
-        // Don't forget to shutdown tts!
         if (tts != null) {
             tts.stop();
             tts.shutdown();
