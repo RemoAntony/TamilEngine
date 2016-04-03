@@ -1,24 +1,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/bg_maingradient"
+    android:orientation="vertical"
     tools:context="com.antony.remo.tamilengine.AndroidTextToSpeechActivity">
+
+    <TextView
+        android:id="@+id/actualtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
 
     <EditText
         android:id="@+id/txtText"
-        android:textColor="#ffffff"
-        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_width="match_parent"
+        android:layout_marginTop="200dp"
         android:hint="Enter the Text to be Converted"
-        android:textColorHint="#ffffff"
-        android:layout_height="100dp" />
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
     <Button
         android:id="@+id/btnSpeakk"
-        android:layout_gravity="center"
-        android:background="@drawable/ico_mic"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/ico_mic" />
 </LinearLayout>

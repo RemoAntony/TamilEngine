@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">TamilEngine</string>
-    <string name="simple_ime">Simple IME</string>
-    <string name="subtype_en_US">English (US)</string>
+    <string name="simple_ime">- Remo</string>
+    <string name="subtype_en_US">Tamil Keyboard</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="speech_prompt">Say something&#8230;</string>
