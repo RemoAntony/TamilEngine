@@ -9,4 +9,5 @@
     <string name="tap_on_mic">Tap on mic to speak</string>
     <string name="title_activity_speech_to_text">SpeechToText</string>
     <string name="title_activity_android_text_to_speech">AndroidTextToSpeechActivity</string>
+    <string name="title_activity_tamil_check">TamilCheck</string>
 </resources>

@@ -34,6 +34,16 @@
         android:onClick="stt"
         android:layout_width="match_parent"
         android:layout_height="60dp" />
+    <Button
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_gray"
+        android:text="Tamil Check"
+        android:onClick="ttcheck"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
     <TextView
         android:textColor="#ffffff"
         android:textAppearance="?android:textAppearanceMedium"

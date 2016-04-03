@@ -1,7 +1,9 @@
 package com.antony.remo.tamilengine;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
@@ -19,7 +21,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        SQLiteDatabase mydatabase = openOrCreateDatabase("tamilvoice",MODE_PRIVATE,null);
         /*InputMethodManager mgr =
                 (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         if (mgr != null) {
@@ -31,6 +33,15 @@ public class MainActivity extends ActionBarActivity {
 
         DisplayMetrics dm = res.getDisplayMetrics();
 
+        SharedPreferences sp=getSharedPreferences("voice",MODE_PRIVATE);
+        String ft=sp.getString("firsttime",null);
+        if(ft==null||ft.equals(""))
+        {
+            getSharedPreferences("voice",MODE_PRIVATE).edit().putString("firsttime","0").commit();
+
+            mydatabase.execSQL("CREATE TABLE IF NOT EXISTS tamil(tamilkey VARCHAR,englishkey VARCHAR);");
+            mydatabase.execSQL("insert into tamil values ('?' , 'a');");
+        }
         android.content.res.Configuration conf = res.getConfiguration();
 
         conf.locale = new Locale("ta");
@@ -69,6 +80,11 @@ public class MainActivity extends ActionBarActivity {
     {
         Intent intent=new Intent(MainActivity.this,SpeechToText.class);
         startActivity(intent);
+    }
+    public void ttcheck(View view)
+    {
+        Intent i=new Intent(MainActivity.this,TamilCheck.class);
+        startActivity(i);
     }
     public void tts(View view)
     {

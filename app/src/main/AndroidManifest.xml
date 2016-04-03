@@ -46,6 +46,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.antony.remo.tamilengine.MainActivity" />
         </activity>
+        <activity
+            android:name=".TamilCheck"
+            android:label="@string/title_activity_tamil_check"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.antony.remo.tamilengine.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

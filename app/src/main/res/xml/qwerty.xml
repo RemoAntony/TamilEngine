@@ -14,7 +14,7 @@
         <Key android:codes="55" android:keyLabel="7"/>
         <Key android:codes="56" android:keyLabel="8"/>
         <Key android:codes="57" android:keyLabel="9"/>
-        <Key android:codes="48" android:keyLabel="0" android:keyEdgeFlags="right"/>
+        <Key android:codes="58" android:keyLabel="0" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
         <Key android:codes="981" android:keyLabel="அ" android:keyEdgeFlags="left"/>
@@ -26,30 +26,34 @@
         <Key android:codes="987" android:keyLabel="எ"/>
         <Key android:codes="988" android:keyLabel="ஏ"/>
         <Key android:codes="989" android:keyLabel="ஐ"/>
-        <Key android:codes="190" android:keyLabel="ஒ" android:keyEdgeFlags="right"/>
+        <Key android:codes="990" android:keyLabel="ஒ" />
+        <Key android:codes="991" android:keyLabel="ஓ"/>
+        <Key android:codes="992" android:keyLabel="ஔ"/>
+        <Key android:codes="993" android:keyLabel="ஃ" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="97" android:keyLabel="a" android:keyEdgeFlags="left"/>
-        <Key android:codes="115" android:keyLabel="s"/>
-        <Key android:codes="100" android:keyLabel="d"/>
-        <Key android:codes="102" android:keyLabel="f"/>
-        <Key android:codes="103" android:keyLabel="g"/>
-        <Key android:codes="104" android:keyLabel="h"/>
-        <Key android:codes="106" android:keyLabel="j"/>
-        <Key android:codes="107" android:keyLabel="k"/>
-        <Key android:codes="108" android:keyLabel="l"/>
+        <Key android:codes="100" android:keyLabel="க்" android:keyEdgeFlags="left"/>
+        <Key android:codes="101" android:keyLabel="ங்"/>
+        <Key android:codes="102" android:keyLabel="ச்"/>
+        <Key android:codes="103" android:keyLabel="ஞ்"/>
+        <Key android:codes="104" android:keyLabel="ட்"/>
+        <Key android:codes="105" android:keyLabel="ண்"/>
+        <Key android:codes="106" android:keyLabel="த்"/>
+        <Key android:codes="107" android:keyLabel="ந்"/>
+        <Key android:codes="108" android:keyLabel="ப்"/>
         <Key android:codes="35,64" android:keyLabel="\# \@" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:codes="-1" android:keyLabel="CAPS" android:keyEdgeFlags="left"/>
-        <Key android:codes="122" android:keyLabel="z"/>
-        <Key android:codes="120" android:keyLabel="x"/>
-        <Key android:codes="99" android:keyLabel="c"/>
-        <Key android:codes="118" android:keyLabel="v"/>
-        <Key android:codes="98" android:keyLabel="b"/>
-        <Key android:codes="110" android:keyLabel="n"/>
-        <Key android:codes="109" android:keyLabel="m"/>
-        <Key android:codes="46" android:keyLabel="."/>
+        <Key android:codes="109" android:keyLabel="ம்" android:keyEdgeFlags="left" />
+        <Key android:codes="110" android:keyLabel="ய்"/>
+        <Key android:codes="111" android:keyLabel="ர்"/>
+        <Key android:codes="112" android:keyLabel="ல்"/>
+        <Key android:codes="113" android:keyLabel="வ்"/>
+        <Key android:codes="114" android:keyLabel="ழ்"/>
+        <Key android:codes="115" android:keyLabel="ள்"/>
+        <Key android:codes="116" android:keyLabel="ற்"/>
+        <Key android:codes="117" android:keyLabel="ன்"/>
+        <Key android:codes="209" android:keyLabel="."/>
         <Key android:codes="63,33,58" android:keyLabel="\? ! :" android:keyEdgeFlags="right"/>
     </Row>
     <Row android:rowEdgeFlags="bottom">
